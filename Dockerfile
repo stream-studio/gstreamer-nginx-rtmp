@@ -1,9 +1,9 @@
-FROM stream.studio/gstreamer:1.18.4
+FROM ghcr.io/stream-studio/video.gstreamer:1.22.4
 
 WORKDIR /code
 
-ENV NGINX_VERSION nginx-1.18.0
-ENV NGINX_RTMP_MODULE_VERSION 1.2.1
+ENV NGINX_VERSION nginx-1.24.0
+ENV NGINX_RTMP_MODULE_VERSION 1.2.2
 
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential libssl-dev wget supervisor libpcre3 libpcre3-dev
 
